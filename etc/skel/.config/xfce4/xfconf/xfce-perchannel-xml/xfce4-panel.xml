@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="xfce4-panel" version="1.0">
   <property name="configver" type="int" value="2"/>
@@ -125,16 +125,16 @@
       <property name="command-switchuser" type="string" value="xfce4-session-logout -u"/>
       <property name="show-command-switchuser" type="bool" value="true"/>
       <property name="favorites" type="array">
+        <value type="string" value="alacritty-tweak-tool.desktop"/>
+        <value type="string" value="Alacritty.desktop"/>
+        <value type="string" value="archlinux-tweak-tool.desktop"/>
+        <value type="string" value="archlinux-betterlockscreen.desktop"/>
         <value type="string" value="firefox.desktop"/>
         <value type="string" value="thunar.desktop"/>
-        <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="arcolinux-welcome-app.desktop"/>
-        <value type="string" value="archlinux-tweak-tool.desktop"/>
-        <value type="string" value="sofirem.desktop"/>
-        <value type="string" value="arcolinux-app-glade.desktop"/>
-        <value type="string" value="archlinux-betterlockscreen.desktop"/>
       </property>
       <property name="recent" type="array">
+        <value type="string" value="thunar.desktop"/>
+        <value type="string" value="archlinux-tweak-tool.desktop"/>
       </property>
       <property name="search-actions" type="int" value="7">
         <property name="action-0" type="empty">

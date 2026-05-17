@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="xfce4-notifyd" version="1.0">
   <property name="applications" type="empty">
@@ -24,6 +24,7 @@
       <value type="string" value="Package Manager"/>
       <value type="string" value="pasystray"/>
       <value type="string" value="pragha"/>
+      <value type="string" value="signal"/>
       <value type="string" value="Spotify"/>
       <value type="string" value="System Config Printer Notification"/>
       <value type="string" value="Terminal"/>

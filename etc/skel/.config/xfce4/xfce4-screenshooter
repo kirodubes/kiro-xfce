@@ -1,6 +1,6 @@
-delay=1
+delay=3
 region=1
-action=1
+action=2
 show_mouse=0
 title=ArcoLinux
 timestamp=TRUE
