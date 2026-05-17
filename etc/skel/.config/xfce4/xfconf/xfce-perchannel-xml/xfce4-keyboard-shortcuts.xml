@@ -51,7 +51,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;w" type="string" value="arcolinux-welcome-app"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="xfce4-settings-manager"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
       <property name="Print" type="string" value="xfce4-screenshooter -f"/>
@@ -92,7 +91,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;e" type="string" value="archlinux-tweak-tool"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;n" type="string" value="xfce4-settings-manager"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;comma" type="string" value="xfce4-settings-manager"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;z" type="string" value="arcolinux-welcome-app"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;KP_Enter" type="string" value="alacritty"/>
       <property name="&lt;Alt&gt;n" type="string" value="variety -n"/>
       <property name="&lt;Alt&gt;p" type="string" value="variety -p"/>
