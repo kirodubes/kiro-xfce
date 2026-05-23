@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="kiro.jpg" alt="Kiro" width="220" />
+</p>
+
 # edu-xfce
 
 Educational / tutorial repository for [Xfce 4](https://www.xfce.org/), the lightweight classic desktop environment. Part of the `~/EDU/` learning series — Erik's Xfce defaults dropped on top of a fresh Arch / Kiro install.
