@@ -118,7 +118,7 @@
 	<name>Convert png to jpg</name>
 	<submenu></submenu>
 	<unique-id>1510662686010963-1</unique-id>
-	<command>sh -c 'magick &quot;$1&quot; -background white -flatten -quality 90 &quot;${1%.*}.jpg&quot;' _ %f</command>
+	<command>magick %f -background white -flatten -quality 90 &quot;$(basename %f | sed 's/\.[^.]*$/.jpg/')&quot;</command>
 	<description>Convert png to jpg</description>
 	<range></range>
 	<patterns>*.png</patterns>
@@ -129,7 +129,7 @@
 	<name>Convert webp to jpg</name>
 	<submenu></submenu>
 	<unique-id>1510662686010963-2</unique-id>
-	<command>sh -c 'magick &quot;$1&quot; -background white -flatten -quality 90 &quot;${1%.*}.jpg&quot;' _ %f</command>
+	<command>magick %f -background white -flatten -quality 90 &quot;$(basename %f | sed 's/\.[^.]*$/.jpg/')&quot;</command>
 	<description>Convert webp to jpg</description>
 	<range></range>
 	<patterns>*.webp</patterns>
@@ -140,7 +140,7 @@
 	<name>Convert jpg/png to webp</name>
 	<submenu></submenu>
 	<unique-id>1510662686010963-3</unique-id>
-	<command>sh -c 'magick &quot;$1&quot; -quality 90 &quot;${1%.*}.webp&quot;' _ %f</command>
+	<command>magick %f -quality 90 &quot;$(basename %f | sed 's/\.[^.]*$/.webp/')&quot;</command>
 	<description>Convert jpg/png to webp</description>
 	<range></range>
 	<patterns>*.jpg;*.jpeg;*.JPG;*.JPEG;*.png;*.PNG</patterns>
