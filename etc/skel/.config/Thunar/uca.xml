@@ -130,7 +130,7 @@
 	<name>Convert png to jpg</name>
 	<submenu></submenu>
 	<unique-id>1510662686010963-1</unique-id>
-	<command>convert %f -quality 90 `basename %f .png`.jpg</command>
+	<command>magick %f -quality 90 `basename %f .png`.jpg</command>
 	<description>Convert png to jpg</description>
 	<range></range>
 	<patterns>*.png</patterns>
@@ -141,10 +141,21 @@
 	<name>Convert webp to jpg</name>
 	<submenu></submenu>
 	<unique-id>1510662686010963-2</unique-id>
-	<command>convert %f -quality 90 `basename %f .webp`.jpg</command>
+	<command>magick %f -quality 90 `basename %f .webp`.jpg</command>
 	<description>Convert webp to jpg</description>
 	<range></range>
 	<patterns>*.webp</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>system-reboot</icon>
+	<name>Convert png or jpg to webp</name>
+	<submenu></submenu>
+	<unique-id>1510662686010963-3</unique-id>
+	<command>magick %f -quality 90 &quot;$(basename %f | sed 's/\.[^.]*$/.webp/')&quot;</command>
+	<description>Convert png or jpg to webp</description>
+	<range></range>
+	<patterns>*.png;*.PNG;*.jpg;*.JPG;*.jpeg;*.JPEG</patterns>
 	<image-files/>
 </action>
 <action>
