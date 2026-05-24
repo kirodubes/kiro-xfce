@@ -110,7 +110,7 @@
     </property>
     <property name="plugin-7" type="string" value="whiskermenu">
       <property name="button-title" type="string" value="Kiro  "/>
-      <property name="button-icon" type="string" value="start-here-arcolinux"/>
+      <property name="button-icon" type="string" value="kiro"/>
       <property name="show-button-title" type="bool" value="true"/>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="category-icon-size" type="int" value="2"/>
