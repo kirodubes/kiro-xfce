@@ -13,6 +13,18 @@
 	<directories/>
 </action>
 <action>
+	<icon>utilities-terminal</icon>
+	<name>Open Claude Here</name>
+	<submenu></submenu>
+	<unique-id>open-claude</unique-id>
+	<command>alacritty --working-directory %f -e claude</command>
+	<description>Open Claude Code in a terminal in this folder</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
 	<icon>meld</icon>
 	<name>Compare</name>
 	<submenu></submenu>
