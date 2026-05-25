@@ -2,6 +2,6 @@ delay=3
 region=1
 action=2
 show_mouse=0
-title=ArcoLinux
+title=Kiro
 timestamp=TRUE
 app=nomacs

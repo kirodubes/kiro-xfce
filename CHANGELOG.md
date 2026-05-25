@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026.05.25
+
+### What Changed
+- De-brand (user-visible): the xfce4-screenshooter saved config had
+  `title=ArcoLinux`. Changed to `title=Kiro`. Part of the ecosystem-wide
+  arcolinux de-brand sweep.
+
+### Files Modified
+- `etc/skel/.config/xfce4/xfce4-screenshooter`
+
 ## 2026.05.21
 
 ### What Changed
