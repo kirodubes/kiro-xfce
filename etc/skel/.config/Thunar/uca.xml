@@ -25,6 +25,35 @@
 	<directories/>
 </action>
 <action>
+	<icon>com.visualstudio.code</icon>
+	<name>Open in VSCode</name>
+	<submenu></submenu>
+	<unique-id>1748160100000000-1</unique-id>
+	<command>code %F</command>
+	<description>Open the selection in Visual Studio Code</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>com.visualstudio.code</icon>
+	<name>Open as root in VSCode</name>
+	<submenu></submenu>
+	<unique-id>1748160100000000-2</unique-id>
+	<command>sh -c 'pkexec env DISPLAY=&quot;$DISPLAY&quot; XAUTHORITY=&quot;$XAUTHORITY&quot; code --no-sandbox --user-data-dir=/root/.vscode-root &quot;$@&quot;' _ %F</command>
+	<description>Open the selection in Visual Studio Code as root</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
 	<icon>meld</icon>
 	<name>Compare</name>
 	<submenu></submenu>
@@ -55,17 +84,6 @@
 	<unique-id>1587287434852027-1</unique-id>
 	<command>gittyup %F</command>
 	<description>Open with gittyup</description>
-	<range></range>
-	<patterns>*</patterns>
-	<directories/>
-</action>
-<action>
-	<icon>gitfiend</icon>
-	<name>Open with gitfiend</name>
-	<submenu></submenu>
-	<unique-id>1587287435012027-1</unique-id>
-	<command>gitfiend %F</command>
-	<description>Open with gitfiend</description>
 	<range></range>
 	<patterns>*</patterns>
 	<directories/>
@@ -137,6 +155,19 @@
 	<other-files/>
 </action>
 <action>
+	<icon>archive-insert</icon>
+	<name>Compress here (.tar.gz)</name>
+	<submenu></submenu>
+	<unique-id>1748160100000000-4</unique-id>
+	<command>sh -c 'cd &quot;$(dirname &quot;$1&quot;)&quot; || exit; b=&quot;$(basename &quot;$1&quot;)&quot;; tar czf &quot;$b.tar.gz&quot; &quot;$b&quot;' _ %f</command>
+	<description>Compress the selection into a .tar.gz archive</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
 	<icon>applications-graphics</icon>
 	<name>Convert png to jpg</name>
 	<submenu></submenu>
@@ -202,6 +233,22 @@
 	<range></range>
 	<patterns>*</patterns>
 	<image-files/>
+</action>
+<action>
+	<icon>edit-copy</icon>
+	<name>Copy full path</name>
+	<submenu></submenu>
+	<unique-id>1748160100000000-3</unique-id>
+	<command>sh -c 'out=$(for f in &quot;$@&quot;; do echo &quot;$f&quot;; done); echo -n &quot;$out&quot; | xclip -selection clipboard' _ %F</command>
+	<description>Copy the full path of the selection to the clipboard</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
 </action>
 <action>
 	<icon>insert-link-symbolic</icon>
