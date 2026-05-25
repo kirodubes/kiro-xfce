@@ -104,6 +104,17 @@
 	<other-files/>
 </action>
 <action>
+	<icon>baobab</icon>
+	<name>Analyze disk usage</name>
+	<submenu></submenu>
+	<unique-id>1748160000000000-1</unique-id>
+	<command>baobab %f</command>
+	<description>Analyze disk usage with Disk Usage Analyzer</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
 	<icon>catfish</icon>
 	<name>Search with catfish</name>
 	<submenu></submenu>
