@@ -1,0 +1,124 @@
+###############################################################################
+#  KEYBINDINGS — XFCE
+#  Source: ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+#  Generated: 2026.05.30 by /kiro-create-keybindings — DO NOT EDIT BY HAND
+###############################################################################
+
+── 1. Applications & Launchers ───────────────────────────────────────────────
+  alt + F1                    xfce4 whisker menu (app launcher)
+  ctrl + super + alt          xfce4 whisker menu (alt trigger)
+  alt + F2                    xfce4-appfinder collapsed
+  alt + F3                    xfce4-appfinder
+  super + d                   dmenu app launcher
+  shift + super + d           dmenu app launcher (alt binding)
+  ctrl + Escape               xfdesktop desktop right-click menu
+  super + Return              alacritty (terminal)
+  super + t                   alacritty (terminal)
+  ctrl + alt + Return         alacritty (terminal)
+  ctrl + alt + KP_Enter       alacritty (terminal, numpad Enter)
+  ctrl + alt + t              alacritty (terminal)
+  F12                         xfce4-terminal drop-down
+  super + h                   alacritty + btop (system monitor)
+  ctrl + alt + End            alacritty + btop (system monitor)
+  shift + super + Return      thunar (file manager)
+  super + F8                  thunar (file manager)
+  super + w                   default web browser
+  super + F1                  default web browser
+  XF86WWW                     default web browser (hardware key)
+  HomePage                    default web browser (hardware key)
+  ctrl + alt + f              firefox
+  ctrl + alt + v              vivaldi-stable
+  ctrl + alt + g              chromium
+  ctrl + alt + c              chromium (alt binding)
+  ctrl + alt + o              opera
+  ctrl + alt + b              brave
+  XF86Mail                    default mail client (hardware key)
+  super + F2                  VSCode (code editor)
+  super + F3                  inkscape
+  super + F4                  gimp
+  super + F5                  meld (diff/merge tool)
+  super + F6                  vlc (media player)
+  super + F7                  virtualbox
+  super + m                   lollypop (music player)
+  super + F9                  lollypop (music player)
+  super + F10                 spotify
+  ctrl + alt + s              spotify
+  super + v                   pavucontrol (volume control GUI)
+  ctrl + alt + u              pavucontrol (alt binding)
+  ctrl + alt + a              alacritty-tweak-tool
+  ctrl + alt + q              alacritty-tweak-tool (alt binding)
+  ctrl + alt + e              archlinux-tweak-tool (ATT)
+  ctrl + alt + p              pamac-manager (package manager)
+  ctrl + shift + Escape       xfce4-taskmanager
+
+── 2. Window Management ──────────────────────────────────────────────────────
+  super + q                   close focused window
+  shift + super + q           close focused window (alt binding)
+  alt + Tab                   cycle windows forward
+  alt + shift + Tab           cycle windows reverse
+  super + Tab                 switch window (switcher popup)
+  alt + F9                    minimize/hide window
+  alt + F10                   maximize window
+  alt + F11                   toggle fullscreen
+  alt + F6                    toggle sticky (show on all workspaces)
+  alt + F12                   toggle keep-above
+  alt + F7                    move window (interactive drag)
+  alt + F8                    resize window (interactive)
+  alt + space                 window context menu
+  shift + alt + Page_Up       raise window (bring to front)
+  shift + alt + Page_Down     lower window (send to back)
+  super + Escape              xkill — click to kill app
+  ctrl + alt + Escape         xkill (alt binding)
+  ctrl + alt + d              show/hide desktop
+  Up                          focus window above (nav mode)
+  Down                        focus window below (nav mode)
+  Left                        focus window left (nav mode)
+  Right                       focus window right (nav mode)
+  Escape                      cancel keyboard action
+
+── 3. Workspaces / Tags / Groups ─────────────────────────────────────────────
+  ctrl + F1..F12              switch to workspace 1–12
+  ctrl + alt + Left           go to left workspace
+  ctrl + alt + Right          go to right workspace
+  ctrl + alt + Up             go to workspace above
+  ctrl + alt + Down           go to workspace below
+  ctrl + alt + KP_1..KP_9    move window to workspace 1–9
+  ctrl + alt + Home           move window to previous workspace
+  alt + Insert                add new workspace
+  alt + Delete                remove current workspace
+
+── 5. Multi-monitor ──────────────────────────────────────────────────────────
+  super + p                   display settings (quick dialog)
+  XF86Display                 display settings (hardware key)
+
+── 6. Multimedia & Hardware ──────────────────────────────────────────────────
+  XF86AudioPlay               playerctl play-pause
+  XF86AudioStop               playerctl pause
+  XF86AudioPrev               playerctl previous track
+  XF86AudioNext               playerctl next track
+
+── 7. Screenshots ────────────────────────────────────────────────────────────
+  Print                       xfce4-screenshooter full screen
+  ctrl + Print                xfce4-screenshooter interactive GUI
+  ctrl + shift + Print        xfce4-screenshooter region select
+  ctrl + super + Print        flameshot GUI
+
+── 8. System & Session ───────────────────────────────────────────────────────
+  ctrl + alt + l              archlinux-logout
+  ctrl + alt + k              archlinux-logout (alt binding)
+  super + x                   archlinux-logout (alt binding)
+  shift + super + x           xfce4-session-logout (full dialog)
+  ctrl + alt + m              xfce4-settings-manager
+  ctrl + alt + n              xfce4-settings-manager (alt binding)
+  ctrl + alt + comma          xfce4-settings-manager (alt binding)
+  super + c                   conky-toggle
+  ctrl + alt + Page_Up        conky-rotate next theme
+  ctrl + alt + Page_Down      conky-rotate previous theme
+  alt + n                     variety next wallpaper
+  alt + p                     variety previous wallpaper
+  alt + t                     variety trash wallpaper
+  alt + f                     variety favorite wallpaper
+  alt + Right                 variety next wallpaper (alt binding)
+  alt + Left                  variety previous wallpaper (alt binding)
+  alt + Up                    variety toggle pause
+  alt + Down                  variety resume

@@ -112,6 +112,7 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;c" type="string" value="chromium"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;o" type="string" value="opera"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="brave"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;d" type="string" value="obs"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
