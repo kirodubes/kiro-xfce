@@ -101,6 +101,8 @@
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="vlc"/>
+        <value type="string" value="obs"/>
         <value type="string" value="Insync"/>
         <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="ckb-next_ckb-next"/>
@@ -189,6 +191,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="mpris-players" type="string" value="pragha;spotify"/>
+      <property name="known-players" type="string" value="de.haeckerfelix.Shortwave;Vivaldi;vlc"/>
     </property>
   </property>
 </channel>
