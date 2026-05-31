@@ -55,6 +55,7 @@
 ; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-dtime" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-templates" "")
 (gtk_accel_path "<Actions>/ThunarActions/uca-action-open-terminal" "F4")
+(gtk_accel_path "<Actions>/ThunarActions/uca-action-open-claude" "<Super>o")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/paste-2" "<Shift>Insert")
 ; (gtk_accel_path "<Actions>/ThunarWindow/switch-next-tab" "<Primary>Page_Down")
 ; (gtk_accel_path "<Actions>/ThunarStatusBar/toggle-filetype" "")
