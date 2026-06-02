@@ -2,13 +2,14 @@
   <img src="kiro.jpg" alt="Kiro" width="220" />
 </p>
 
-# edu-xfce
+# kiro-xfce
 
 Educational / tutorial repository for [Xfce 4](https://www.xfce.org/), the lightweight classic desktop environment. Part of the `~/EDU/` learning series — Erik's Xfce defaults dropped on top of a fresh Arch / Kiro install.
 
 ## What's in this repo
 
 - `etc/skel/` — Xfce user config (xfconf settings, panel layout, autostart entries) that lands in `/etc/skel/`.
+- `super + ctrl + s` — opens the searchable keybindings cheatsheet (`kiro-keybindings`), the universal cheatsheet hotkey across all Kiro desktops.
 - `setup.sh`, `up.sh`, `cleanup.sh` — standard EDU bash scaffold.
 
 ## Installation
@@ -23,7 +24,7 @@ Server = https://erikdubois.github.io/$repo/$arch
 
 ```bash
 sudo pacman -Syu
-sudo pacman -S edu-xfce
+sudo pacman -S kiro-xfce
 ```
 
 You'll also need Xfce itself:
@@ -35,8 +36,8 @@ sudo pacman -S xfce4 xfce4-goodies
 ### Manual
 
 ```bash
-git clone https://github.com/erikdubois/edu-xfce.git
-cd edu-xfce
+git clone https://github.com/kirodubes/kiro-xfce.git
+cd kiro-xfce
 sudo cp -r etc/skel/. /etc/skel/
 ```
 

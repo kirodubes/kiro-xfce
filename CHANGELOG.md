@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026.06.01
+
+### What Changed
+- Added an XFCE command shortcut `super + ctrl + s` (`<Primary><Super>s`) that
+  launches `kiro-keybindings`, the new searchable Qt6/PySide6 keybindings
+  cheatsheet (a cross-desktop Kiro feature). `super + ctrl + s` is the universal
+  cheatsheet hotkey now used across all Kiro desktops ("S" = Shortcuts;
+  AZERTY-safe).
+
+### Technical Details
+- Registered as a custom command shortcut under the `<commands>/custom` node of
+  the xfconf keyboard-shortcuts channel, mirroring the existing entries.
+- XFCE is a full desktop, not a tiling WM, so it has no `keybindings.txt`
+  reference file (that artifact is TWM-only) — only the xfconf XML changed.
+
+### Files Modified
+- `etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml`
+
 ## 2026.05.31
 
 ### What Changed

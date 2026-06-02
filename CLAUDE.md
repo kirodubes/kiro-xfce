@@ -1,4 +1,4 @@
-# CLAUDE.md — edu-xfce
+# CLAUDE.md — kiro-xfce
 
 ## Project overview
 
