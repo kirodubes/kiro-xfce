@@ -76,6 +76,7 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="vivaldi-stable"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;s" type="string" value="spotify"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;g" type="string" value="chromium"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;i" type="string" value="kiro-iso-builder"/>
       <property name="&lt;Super&gt;x" type="string" value="archlinux-logout"/>
       <property name="XF86AudioPlay" type="string" value="playerctl play-pause"/>
       <property name="XF86AudioStop" type="string" value="playerctl pause"/>

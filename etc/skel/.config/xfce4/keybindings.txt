@@ -30,6 +30,7 @@
   ctrl + alt + f              firefox
   ctrl + alt + v              vivaldi-stable
   ctrl + alt + g              chromium
+  ctrl + alt + i              kiro-iso-builder
   ctrl + alt + c              chromium (alt binding)
   ctrl + alt + o              opera
   ctrl + alt + b              brave
