@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026.06.08
+
+### What Changed
+- Rebound `Super + F9` from `lollypop` to `virt-manager` in `xfce4-keyboard-shortcuts.xml`, matching the distro-wide change applied across all Kiro environments.
+- Regenerated the XFCE keybindings cheatsheet to catch up with source changes made to `xfce4-keyboard-shortcuts.xml`: `Ctrl + Alt + d` is now `obs` (was the show/hide-desktop WM action), and `Super + Ctrl + s` → `kiro-keybindings` (the universal cheatsheet hotkey) is now reflected in the cheatsheet.
+
+### Technical Details
+- `Super + F9`: changed the `<Super>F9` custom-command value from `lollypop` to `virt-manager`.
+- `Ctrl + Alt + d` moved from the Window Management section to Applications & Launchers (it launches an app now, not a WM action), matching how every other Kiro cheatsheet sorts `obs`. Added the `Super + Ctrl + s` launcher line. Header bumped to today + unified generator name; the `Source:` line made repo-relative. Re-rendered `keybindings.html` + `keybindings.pdf` via `kiro-keybindings-html.py` (pure transform of the `.txt`).
+
+### Files Modified
+- `etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml`
+- `etc/skel/.config/xfce4/keybindings.txt`
+- `etc/skel/.config/xfce4/keybindings.html`
+- `etc/skel/.config/xfce4/keybindings.pdf`
+
 ## 2026.06.01
 
 ### What Changed

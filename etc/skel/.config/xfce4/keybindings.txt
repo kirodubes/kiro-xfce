@@ -1,7 +1,7 @@
 ###############################################################################
 #  KEYBINDINGS — XFCE
-#  Source: ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-#  Generated: 2026.05.30 by /kiro-create-keybindings — DO NOT EDIT BY HAND
+#  Source: etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+#  Generated: 2026.06.08 by /kiro-keybindings-all-twms-xfce — DO NOT EDIT BY HAND
 ###############################################################################
 
 ── 1. Applications & Launchers ───────────────────────────────────────────────
@@ -11,6 +11,7 @@
   alt + F3                    xfce4-appfinder
   super + d                   dmenu app launcher
   shift + super + d           dmenu app launcher (alt binding)
+  super + ctrl + s            kiro-keybindings (cheatsheet)
   ctrl + Escape               xfdesktop desktop right-click menu
   super + Return              alacritty (terminal)
   super + t                   alacritty (terminal)
@@ -32,6 +33,7 @@
   ctrl + alt + c              chromium (alt binding)
   ctrl + alt + o              opera
   ctrl + alt + b              brave
+  ctrl + alt + d              obs
   XF86Mail                    default mail client (hardware key)
   super + F2                  VSCode (code editor)
   super + F3                  inkscape
@@ -40,7 +42,7 @@
   super + F6                  vlc (media player)
   super + F7                  virtualbox
   super + m                   lollypop (music player)
-  super + F9                  lollypop (music player)
+  super + F9                  virt-manager (virtual machine manager)
   super + F10                 spotify
   ctrl + alt + s              spotify
   super + v                   pavucontrol (volume control GUI)
@@ -69,7 +71,6 @@
   shift + alt + Page_Down     lower window (send to back)
   super + Escape              xkill — click to kill app
   ctrl + alt + Escape         xkill (alt binding)
-  ctrl + alt + d              show/hide desktop
   Up                          focus window above (nav mode)
   Down                        focus window below (nav mode)
   Left                        focus window left (nav mode)

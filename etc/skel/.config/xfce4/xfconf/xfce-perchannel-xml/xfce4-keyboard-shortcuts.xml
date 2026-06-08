@@ -69,7 +69,7 @@
       <property name="&lt;Super&gt;F6" type="string" value="vlc"/>
       <property name="&lt;Super&gt;F7" type="string" value="virtualbox"/>
       <property name="&lt;Super&gt;F8" type="string" value="thunar"/>
-      <property name="&lt;Super&gt;F9" type="string" value="lollypop"/>
+      <property name="&lt;Super&gt;F9" type="string" value="virt-manager"/>
       <property name="&lt;Super&gt;F10" type="string" value="spotify"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;a" type="string" value="alacritty-tweak-tool"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;q" type="string" value="alacritty-tweak-tool"/>
