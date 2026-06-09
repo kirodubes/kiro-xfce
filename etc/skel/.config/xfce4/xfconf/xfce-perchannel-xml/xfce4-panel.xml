@@ -120,8 +120,8 @@
       <property name="position-search-alternate" type="bool" value="true"/>
       <property name="position-commands-alternate" type="bool" value="true"/>
       <property name="position-categories-alternate" type="bool" value="true"/>
-      <property name="menu-width" type="int" value="410"/>
-      <property name="menu-height" type="int" value="583"/>
+      <property name="menu-width" type="int" value="388"/>
+      <property name="menu-height" type="int" value="601"/>
       <property name="menu-opacity" type="int" value="80"/>
       <property name="command-lockscreen" type="string" value="archlinux-logout"/>
       <property name="command-switchuser" type="string" value="xfce4-session-logout -u"/>
@@ -130,7 +130,7 @@
         <value type="string" value="Alacritty.desktop"/>
         <value type="string" value="alacritty-tweak-tool.desktop"/>
         <value type="string" value="archlinux-tweak-tool.desktop"/>
-        <value type="string" value="kiro-iso-buiilder.desktop"/>
+        <value type="string" value="kiro-iso-builder.desktop"/>
         <value type="string" value="archlinux-betterlockscreen.desktop"/>
         <value type="string" value="firefox.desktop"/>
         <value type="string" value="thunar.desktop"/>
