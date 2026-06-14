@@ -42,7 +42,6 @@
   super + F5                  meld (diff/merge tool)
   super + F6                  vlc (media player)
   super + F7                  virtualbox
-  super + m                   lollypop (music player)
   super + F9                  virt-manager (virtual machine manager)
   super + F10                 spotify
   ctrl + alt + s              spotify
@@ -84,7 +83,7 @@
   ctrl + alt + Right          go to right workspace
   ctrl + alt + Up             go to workspace above
   ctrl + alt + Down           go to workspace below
-  ctrl + alt + KP_1..KP_9    move window to workspace 1–9
+  ctrl + alt + KP_1..KP_9     move window to workspace 1–9
   ctrl + alt + Home           move window to previous workspace
   alt + Insert                add new workspace
   alt + Delete                remove current workspace
