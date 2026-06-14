@@ -1,7 +1,7 @@
 ###############################################################################
 #  KEYBINDINGS — XFCE
 #  Source: etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-#  Generated: 2026.06.08 by /kiro-keybindings-all-twms-xfce — DO NOT EDIT BY HAND
+#  Generated: 2026.06.14 by /kiro-create-keybindings — DO NOT EDIT BY HAND
 ###############################################################################
 
 ── 1. Applications & Launchers ───────────────────────────────────────────────
@@ -113,9 +113,6 @@
   ctrl + alt + m              xfce4-settings-manager
   ctrl + alt + n              xfce4-settings-manager (alt binding)
   ctrl + alt + comma          xfce4-settings-manager (alt binding)
-  super + c                   conky-toggle
-  ctrl + alt + Page_Up        conky-rotate next theme
-  ctrl + alt + Page_Down      conky-rotate previous theme
   alt + n                     variety next wallpaper
   alt + p                     variety previous wallpaper
   alt + t                     variety trash wallpaper
