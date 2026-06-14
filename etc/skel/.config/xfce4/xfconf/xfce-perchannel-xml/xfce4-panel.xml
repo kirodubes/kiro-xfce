@@ -128,14 +128,17 @@
       <property name="show-command-switchuser" type="bool" value="true"/>
       <property name="favorites" type="array">
         <value type="string" value="Alacritty.desktop"/>
-        <value type="string" value="alacritty-tweak-tool.desktop"/>
         <value type="string" value="archlinux-tweak-tool.desktop"/>
         <value type="string" value="kiro-iso-builder.desktop"/>
+        <value type="string" value="alacritty-tweak-tool.desktop"/>
         <value type="string" value="archlinux-betterlockscreen.desktop"/>
         <value type="string" value="firefox.desktop"/>
         <value type="string" value="thunar.desktop"/>
+        <value type="string" value="kiro-news.desktop"/>
+        <value type="string" value="kiro-assistant.desktop"/>
       </property>
       <property name="recent" type="array">
+        <value type="string" value="kiro-news.desktop"/>
         <value type="string" value="thunar.desktop"/>
         <value type="string" value="archlinux-tweak-tool.desktop"/>
       </property>
