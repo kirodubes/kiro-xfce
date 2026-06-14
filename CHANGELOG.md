@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026.06.14
+
+### What Changed
+- Removed the three conky keybindings from XFCE (`Super + c` conky-toggle, `Ctrl + Alt + Page_Up` / `Ctrl + Alt + Page_Down` conky theme rotation). Edited at the real source (`xfce4-keyboard-shortcuts.xml`) and regenerated the cheatsheet.
+
+### Technical Details
+- Deleted the `<Super>c` (conky-toggle), `<Primary><Alt>Page_Up` (conky-rotate -n) and `<Primary><Alt>Page_Down` (conky-rotate -p) custom-command nodes from the xfconf shortcuts channel. Re-rendered `keybindings.txt` (now 104 bindings) and `keybindings.html` + `keybindings.pdf` via `kiro-keybindings-html.py` (pure transform of the `.txt`); header bumped to today.
+
+### Files Modified
+- `etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml`
+- `etc/skel/.config/xfce4/keybindings.txt`
+- `etc/skel/.config/xfce4/keybindings.html`
+- `etc/skel/.config/xfce4/keybindings.pdf`
+
 ## 2026.06.08
 
 ### What Changed
