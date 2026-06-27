@@ -120,8 +120,8 @@
       <property name="position-search-alternate" type="bool" value="true"/>
       <property name="position-commands-alternate" type="bool" value="true"/>
       <property name="position-categories-alternate" type="bool" value="true"/>
-      <property name="menu-width" type="int" value="392"/>
-      <property name="menu-height" type="int" value="595"/>
+      <property name="menu-width" type="int" value="405"/>
+      <property name="menu-height" type="int" value="641"/>
       <property name="menu-opacity" type="int" value="80"/>
       <property name="command-lockscreen" type="string" value="archlinux-logout"/>
       <property name="command-switchuser" type="string" value="xfce4-session-logout -u"/>
@@ -140,8 +140,8 @@
         <value type="string" value="fish-tweak-tool.desktop"/>
       </property>
       <property name="recent" type="array">
-        <value type="string" value="theme-forge-picker.desktop"/>
         <value type="string" value="fish-tweak-tool.desktop"/>
+        <value type="string" value="theme-forge-picker.desktop"/>
         <value type="string" value="mintstick.desktop"/>
         <value type="string" value="kiro-news.desktop"/>
         <value type="string" value="thunar.desktop"/>
