@@ -111,6 +111,7 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="brave"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;d" type="string" value="obs"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;s" type="string" value="kiro-keybindings"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;space" type="string" value="variety --selector"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

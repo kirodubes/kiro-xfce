@@ -20,6 +20,7 @@
       <value type="string" value="Insync"/>
       <value type="string" value="Kiro News"/>
       <value type="string" value="notify-send"/>
+      <value type="string" value="opera"/>
       <value type="string" value="org.freedesktop.network-manager-applet"/>
       <value type="string" value="org.gnome.Software"/>
       <value type="string" value="org.manjaro.pamac.tray"/>
