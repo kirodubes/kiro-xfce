@@ -4,14 +4,18 @@
 
 ### What Changed
 - Regenerated the XFCE keybindings cheatsheet to catch up with the source rebind committed in `0eb6297`: `Ctrl + Alt + s` now launches `fish-tweak-tool` (was `spotify`). The cheatsheet was stale (last built 2026.06.14) and didn't reflect the change.
+- Split the Plank dock config out into the new standalone **kiro-plank** package. Removed `etc/skel/.config/plank/` from this repo so the dock ships and updates independently.
 
 ### Technical Details
 - Re-parsed `xfce4-keyboard-shortcuts.xml` (the real source) and rewrote `keybindings.txt` (103 binding lines, 6 populated sections — 4 Layout/Tiling and 5 Multi-monitor omitted as XFCE has none). Re-rendered `keybindings.html` + `keybindings.pdf` via `kiro-keybindings-html.py` (pure transform of the `.txt`). Header bumped to today. No XML edits this session — only the generated reference catches up.
+- Plank split: the launchers were present in this source tree but were **never** packaged by the kiro-xfce PKGBUILD (it only copies Thunar/xfce4/autostart), so no installed file moves between packages — the split is purely a source-tree cleanup plus a new additive package. Also dropped the stale `/etc/skel/.config/plank` line from the build recipe's `readme.install`.
 
 ### Files Modified
 - `etc/skel/.config/xfce4/keybindings.txt`
 - `etc/skel/.config/xfce4/keybindings.html`
 - `etc/skel/.config/xfce4/keybindings.pdf`
+- `etc/skel/.config/plank/` (removed — moved to kiro-plank)
+- `~/KIRO-PKG-BUILD-APPS/kiro-xfce/readme.install` (dropped plank line)
 
 ## 2026.06.14
 
