@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026.06.28
+
+### What Changed
+- Regenerated the XFCE keybindings cheatsheet to catch up with the source rebind committed in `0eb6297`: `Ctrl + Alt + s` now launches `fish-tweak-tool` (was `spotify`). The cheatsheet was stale (last built 2026.06.14) and didn't reflect the change.
+
+### Technical Details
+- Re-parsed `xfce4-keyboard-shortcuts.xml` (the real source) and rewrote `keybindings.txt` (103 binding lines, 6 populated sections — 4 Layout/Tiling and 5 Multi-monitor omitted as XFCE has none). Re-rendered `keybindings.html` + `keybindings.pdf` via `kiro-keybindings-html.py` (pure transform of the `.txt`). Header bumped to today. No XML edits this session — only the generated reference catches up.
+
+### Files Modified
+- `etc/skel/.config/xfce4/keybindings.txt`
+- `etc/skel/.config/xfce4/keybindings.html`
+- `etc/skel/.config/xfce4/keybindings.pdf`
+
 ## 2026.06.14
 
 ### What Changed
