@@ -43,6 +43,7 @@
   ctrl + alt + a            alacritty-tweak-tool
   ctrl + alt + q            alacritty-tweak-tool
   ctrl + alt + s            fish-tweak-tool
+  ctrl + alt + z            fastfetch-tweak-tool
   ctrl + alt + e            archlinux-tweak-tool
   ctrl + alt + i            kiro-iso-builder
   ctrl + alt + p            pamac-manager (package manager)

@@ -3,10 +3,12 @@
 ## 2026.06.29
 
 ### What Changed
+- **Trimmed the Whisker Menu favorites** — removed the six tweak/builder tools that now live in the new "Kiro Apps" application menu (Arch Linux Tweak Tool, Kiro ISO Builder, ArchLinux Betterlockscreen, Alacritty Tweak Tool, Fastfetch Tweak Tool, Fish Tweak Tool). Favorites now keep only Thunar, Firefox, Alacritty (terminal), Kiro News, and Kiro Assistant. The tools remain one click away under the Kiro Apps menu folder; this just declutters the favorites strip.
 - Added a lock-screen keybinding: `Ctrl + Alt + r` now launches `archlinux-betterlockscreen`. Ported the binding from the ohmychadwm sxhkd config so XFCE matches the rest of the Kiro line. The `<Primary><Alt>r` slot was previously unused.
+- Added the `fastfetch-tweak-tool` keybinding: `Ctrl + Alt + z` now launches it. Fetched the live binding set in the Kiro VM and ported it back so the source matches the running session.
 
 ### Technical Details
-- Added one `commands/custom` property to `xfce4-keyboard-shortcuts.xml` and mirrored the entry in the human-readable `keybindings.txt` (System & Session section). `keybindings.html`/`keybindings.pdf` are generated artifacts and remain stale until regenerated via `kiro-keybindings-html.py`.
+- Added two `commands/custom` properties to `xfce4-keyboard-shortcuts.xml` (`<Primary><Alt>r` lock screen, `<Primary><Alt>z` fastfetch-tweak-tool) and mirrored both in the human-readable `keybindings.txt`. `keybindings.html`/`keybindings.pdf` are generated artifacts and remain stale until regenerated via `kiro-keybindings-html.py`.
 
 ### Files Modified
 - `etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml`
