@@ -51,9 +51,9 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="xfce4-settings-manager"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
-      <property name="Print" type="string" value="xfce4-screenshooter -f"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="mintstick -m iso"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="gnome-screenshot -i"/>
+      <property name="Print" type="string" value="scrot &apos;Kiro-%Y-%m-%d-%s_screenshot_$wx$h.jpg&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES)&apos;"/>
       <property name="&lt;Primary&gt;Print" type="string" value="xfce4-screenshooter"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -i -nb &apos;#191919&apos; -nf &apos;#fea63c&apos; -sb &apos;#fea63c&apos; -sf &apos;#191919&apos; -fn &apos;NotoMonoRegular:bold:pixelsize=14&apos;"/>
       <property name="&lt;Super&gt;v" type="string" value="pavucontrol"/>
@@ -61,11 +61,11 @@
       <property name="&lt;Super&gt;Escape" type="string" value="xkill"/>
       <property name="&lt;Super&gt;Return" type="string" value="alacritty"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Return" type="string" value="thunar"/>
-      <property name="&lt;Super&gt;F1" type="string" value="exo-open --launch webbrowser"/>
+      <property name="&lt;Super&gt;F1" type="string" value="vivaldi-stable"/>
       <property name="&lt;Super&gt;F3" type="string" value="inkscape"/>
       <property name="&lt;Super&gt;F4" type="string" value="gimp"/>
       <property name="&lt;Super&gt;F5" type="string" value="meld"/>
-      <property name="&lt;Super&gt;F6" type="string" value="vlc"/>
+      <property name="&lt;Super&gt;F6" type="string" value="vlc --video-on-top"/>
       <property name="&lt;Super&gt;F7" type="string" value="virtualbox"/>
       <property name="&lt;Super&gt;F8" type="string" value="thunar"/>
       <property name="&lt;Super&gt;F9" type="string" value="virt-manager"/>
@@ -75,21 +75,21 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="vivaldi-stable"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;s" type="string" value="fish-tweak-tool"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;z" type="string" value="fastfetch-tweak-tool"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;g" type="string" value="chromium"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;g" type="string" value="chromium -no-default-browser-check"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;i" type="string" value="kiro-iso-builder"/>
       <property name="&lt;Super&gt;x" type="string" value="archlinux-logout"/>
       <property name="XF86AudioPlay" type="string" value="playerctl play-pause"/>
-      <property name="XF86AudioStop" type="string" value="playerctl pause"/>
+      <property name="XF86AudioStop" type="string" value="playerctl stop"/>
       <property name="XF86AudioPrev" type="string" value="playerctl previous"/>
       <property name="XF86AudioNext" type="string" value="playerctl next"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Return" type="string" value="alacritty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;p" type="string" value="pamac-manager"/>
-      <property name="F12" type="string" value="xfce4-terminal --drop-down"/>
+      <property name="F12" type="string" value="alacritty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;k" type="string" value="archlinux-logout"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;e" type="string" value="archlinux-tweak-tool"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="archlinux-betterlockscreen"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;n" type="string" value="xfce4-settings-manager"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;comma" type="string" value="xfce4-settings-manager"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;comma" type="string" value="mintstick -m iso"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;KP_Enter" type="string" value="alacritty"/>
       <property name="&lt;Alt&gt;n" type="string" value="variety -n"/>
       <property name="&lt;Alt&gt;p" type="string" value="variety -p"/>
@@ -106,14 +106,27 @@
       <property name="&lt;Super&gt;d" type="string" value="dmenu_run -i -nb &apos;#191919&apos; -nf &apos;#fea63c&apos; -sb &apos;#fea63c&apos; -sf &apos;#191919&apos; -fn &apos;NotoMonoRegular:bold:pixelsize=14&apos;"/>
       <property name="&lt;Super&gt;t" type="string" value="alacritty"/>
       <property name="&lt;Super&gt;h" type="string" value="alacritty -e &quot;btop&quot;"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;End" type="string" value="alacritty -e &quot;btop&quot;"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;End" type="string" value="alacritty -e btop"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;x" type="string" value="xfce4-session-logout"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;c" type="string" value="chromium"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;c" type="string" value="chromium -no-default-browser-check"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;o" type="string" value="opera"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="brave"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="brave --password-store=basic"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;d" type="string" value="obs"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;s" type="string" value="kiro-keybindings"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;space" type="string" value="variety --selector"/>
+      <property name="&lt;Super&gt;e" type="string" value="code"/>
+      <property name="&lt;Super&gt;&lt;Shift&gt;Escape" type="string" value="xkill"/>
+      <property name="&lt;Super&gt;KP_Enter" type="string" value="alacritty"/>
+      <property name="&lt;Super&gt;&lt;Shift&gt;KP_Enter" type="string" value="thunar"/>
+      <property name="&lt;Alt&gt;r" type="string" value="rofi-theme-selector"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;w" type="string" value="fastfetch-tweak-tool"/>
+      <property name="XF86AudioRaiseVolume" type="string" value="pamixer -i 10"/>
+      <property name="XF86AudioLowerVolume" type="string" value="pamixer -d 10"/>
+      <property name="XF86AudioMute" type="string" value="pamixer -t"/>
+      <property name="XF86MonBrightnessUp" type="string" value="xbacklight -inc 10"/>
+      <property name="XF86MonBrightnessDown" type="string" value="xbacklight -dec 10"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;&lt;Shift&gt;F1" type="string" value="update-system"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;&lt;Shift&gt;F1" type="string" value="update-system"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
