@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026.06.29
+
+### What Changed
+- Added a lock-screen keybinding: `Ctrl + Alt + r` now launches `archlinux-betterlockscreen`. Ported the binding from the ohmychadwm sxhkd config so XFCE matches the rest of the Kiro line. The `<Primary><Alt>r` slot was previously unused.
+
+### Technical Details
+- Added one `commands/custom` property to `xfce4-keyboard-shortcuts.xml` and mirrored the entry in the human-readable `keybindings.txt` (System & Session section). `keybindings.html`/`keybindings.pdf` are generated artifacts and remain stale until regenerated via `kiro-keybindings-html.py`.
+
+### Files Modified
+- `etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml`
+- `etc/skel/.config/xfce4/keybindings.txt`
+
 ## 2026.06.28
 
 ### What Changed

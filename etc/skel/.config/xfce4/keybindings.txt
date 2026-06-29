@@ -108,6 +108,7 @@
 ── 8. System & Session ───────────────────────────────────────────────────────
   ctrl + alt + l            archlinux-logout --settings
   ctrl + alt + k            archlinux-logout
+  ctrl + alt + r            archlinux-betterlockscreen (lock screen)
   super + x                 archlinux-logout
   shift + super + x         xfce4-session-logout
   super + Escape            xkill (force-close a window)
