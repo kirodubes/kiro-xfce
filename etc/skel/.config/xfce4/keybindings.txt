@@ -1,7 +1,7 @@
 ###############################################################################
 #  KEYBINDINGS — XFCE
 #  Source: etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-#  Generated: 2026.06.28 by /kiro-create-keybindings — DO NOT EDIT BY HAND
+#  Generated: 2026.06.29 by /kiro-create-keybindings — DO NOT EDIT BY HAND
 ###############################################################################
 
 ── 1. Applications & Launchers ───────────────────────────────────────────────
@@ -106,7 +106,7 @@
   ctrl + super + Print      flameshot gui
 
 ── 8. System & Session ───────────────────────────────────────────────────────
-  ctrl + alt + l            archlinux-logout
+  ctrl + alt + l            archlinux-logout --settings
   ctrl + alt + k            archlinux-logout
   super + x                 archlinux-logout
   shift + super + x         xfce4-session-logout
