@@ -1,7 +1,7 @@
 ###############################################################################
 #  KEYBINDINGS — XFCE
 #  Source: etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-#  Generated: 2026.06.29 by /kiro-create-keybindings — DO NOT EDIT BY HAND
+#  Generated: 2026.06.29 by /kiro-keybindings-all-twms-xfce — DO NOT EDIT BY HAND
 ###############################################################################
 
 ── 1. Applications & Launchers ───────────────────────────────────────────────
@@ -10,7 +10,8 @@
   ctrl + alt + Return       alacritty (terminal)
   ctrl + alt + t            alacritty (terminal)
   ctrl + alt + KP_Enter     alacritty (terminal)
-  F12                       xfce4-terminal (drop-down)
+  super + KP_Enter          alacritty (terminal)
+  F12                       alacritty (terminal)
   super + h                 alacritty -e btop (system monitor)
   ctrl + alt + End          alacritty -e btop (system monitor)
   super + d                 dmenu_run (app launcher)
@@ -20,7 +21,7 @@
   alt + F2                  xfce4-appfinder (collapsed)
   alt + F3                  xfce4-appfinder
   super + w                 web browser (exo-open)
-  super + F1                web browser (exo-open)
+  super + F1                vivaldi
   XF86WWW / HomePage        web browser (exo-open)
   XF86Mail                  mail reader (exo-open)
   ctrl + alt + f            firefox
@@ -31,7 +32,9 @@
   ctrl + alt + b            brave
   super + F8                thunar (file manager)
   shift + super + Return    thunar (file manager)
+  shift + super + KP_Enter  thunar (file manager)
   super + F2                code (VS Code)
+  super + e                 code (VS Code)
   super + F3                inkscape
   super + F4                gimp
   super + F5                meld
@@ -44,9 +47,11 @@
   ctrl + alt + q            alacritty-tweak-tool
   ctrl + alt + s            fish-tweak-tool
   ctrl + alt + z            fastfetch-tweak-tool
+  ctrl + alt + w            fastfetch-tweak-tool
   ctrl + alt + e            archlinux-tweak-tool
   ctrl + alt + i            kiro-iso-builder
   ctrl + alt + p            pamac-manager (package manager)
+  alt + r                   rofi-theme-selector
   alt + n                   variety -n (next wallpaper)
   alt + Right               variety -n (next wallpaper)
   alt + p                   variety -p (previous wallpaper)
@@ -92,18 +97,23 @@
 
 ── 6. Multimedia & Hardware ──────────────────────────────────────────────────
   XF86AudioPlay             playerctl play-pause
-  XF86AudioStop             playerctl pause
+  XF86AudioStop             playerctl stop
   XF86AudioPrev             playerctl previous
   XF86AudioNext             playerctl next
+  XF86AudioRaiseVolume      pamixer -i 10 (volume up)
+  XF86AudioLowerVolume      pamixer -d 10 (volume down)
+  XF86AudioMute             pamixer -t (mute toggle)
   super + v                 pavucontrol (audio mixer)
   ctrl + alt + u            pavucontrol (audio mixer)
   super + p                 xfce4-display-settings (display)
   XF86Display               xfce4-display-settings (display)
+  XF86MonBrightnessUp       xbacklight -inc 10 (brightness up)
+  XF86MonBrightnessDown     xbacklight -dec 10 (brightness down)
 
 ── 7. Screenshots ────────────────────────────────────────────────────────────
   Print                     xfce4-screenshooter -f (fullscreen)
   ctrl + Print              xfce4-screenshooter (GUI)
-  ctrl + shift + Print      xfce4-screenshooter -r (region)
+  ctrl + shift + Print      gnome-screenshot -i (interactive)
   ctrl + super + Print      flameshot gui
 
 ── 8. System & Session ───────────────────────────────────────────────────────
@@ -114,9 +124,10 @@
   shift + super + x         xfce4-session-logout
   super + Escape            xkill (force-close a window)
   ctrl + alt + Escape       xkill (force-close a window)
+  super + shift + Escape    xkill (force-close a window)
   ctrl + shift + Escape     xfce4-taskmanager
-  ctrl + alt + m            xfce4-settings-manager
+  ctrl + alt + m            mintstick -m iso (USB image writer)
   ctrl + alt + n            xfce4-settings-manager
-  ctrl + alt + comma        xfce4-settings-manager
+  ctrl + alt + comma        mintstick -m iso (USB image writer)
   ctrl + Escape             xfdesktop --menu (desktop menu)
   ctrl + super + s          kiro-keybindings (this cheatsheet)

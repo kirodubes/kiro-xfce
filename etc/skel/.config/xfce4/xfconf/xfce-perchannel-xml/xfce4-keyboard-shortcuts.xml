@@ -53,7 +53,7 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="mintstick -m iso"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="gnome-screenshot -i"/>
-      <property name="Print" type="string" value="scrot &apos;Kiro-%Y-%m-%d-%s_screenshot_$wx$h.jpg&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES)&apos;"/>
+      <property name="Print" type="string" value="xfce4-screenshooter -f"/>
       <property name="&lt;Primary&gt;Print" type="string" value="xfce4-screenshooter"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -i -nb &apos;#191919&apos; -nf &apos;#fea63c&apos; -sb &apos;#fea63c&apos; -sf &apos;#191919&apos; -fn &apos;NotoMonoRegular:bold:pixelsize=14&apos;"/>
       <property name="&lt;Super&gt;v" type="string" value="pavucontrol"/>
@@ -125,8 +125,6 @@
       <property name="XF86AudioMute" type="string" value="pamixer -t"/>
       <property name="XF86MonBrightnessUp" type="string" value="xbacklight -inc 10"/>
       <property name="XF86MonBrightnessDown" type="string" value="xbacklight -dec 10"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;&lt;Shift&gt;F1" type="string" value="update-system"/>
-      <property name="&lt;Primary&gt;&lt;Super&gt;&lt;Shift&gt;F1" type="string" value="update-system"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
