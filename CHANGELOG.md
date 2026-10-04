@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026.10.04
+
+### What Changed
+- The Kiro wallpaper now also shows on monitors connected as `DP-0` and `DP-2`. On a desktop with an RTX 3070 and
+  three monitors (nvidia driver: DP-2, HDMI-0, DP-0), only the HDMI-0 screen had the wallpaper; the other two were
+  blank.
+
+### Technical Details
+- xfdesktop 4.20 reads `/backdrop/screen0/monitor<connector>/workspaceN`. The 2024 `DP-0` entry was added without
+  the `monitor` prefix, so xfdesktop never read it, and there was no DP-2 entry at all. Added `monitorDP-0` and
+  `monitorDP-2` as copies of the `monitorDP-1` block (workspaces 0–5, image-style 5, kiro-wallpaper.jpg).
+- The old unprefixed `DP-0` / `DP-1` blocks are left in place; they're harmless.
+
+### Files Modified
+- `etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml`
+
 ## 2026.09.27
 
 ### What Changed
