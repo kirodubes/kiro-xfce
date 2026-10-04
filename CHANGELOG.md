@@ -12,6 +12,16 @@
   the `monitor` prefix, so xfdesktop never read it, and there was no DP-2 entry at all. Added `monitorDP-0` and
   `monitorDP-2` as copies of the `monitorDP-1` block (workspaces 0–5, image-style 5, kiro-wallpaper.jpg).
 - The old unprefixed `DP-0` / `DP-1` blocks are left in place; they're harmless.
+- Then added 46 more `monitor<connector>` entries so the wallpaper is set whatever the GPU driver calls its
+  outputs. Existing entries are left unchanged; nothing was removed.
+  - Modesetting (Intel/AMD/nouveau): `eDP-1/2`, `HDMI-3/4`, `DP-3…6`, `DVI-I-2`, `DVI-D-2`.
+  - Docks and MST hubs: `DP-1-1…DP-3-3`.
+  - Reverse PRIME outputs on hybrid laptops: `HDMI-1-0`, `DP-1-0`, `DP-1-1-0`.
+  - VMs: `Virtual-0/3/4`.
+  - nvidia: `DP-7`, `DVI-I-0`.
+  - xf86-video-amdgpu/ati: `eDP`, `LVDS`, `VGA-0`, `DVI-0`, `DisplayPort-0…5`, `HDMI-A-0…2`.
+  - xf86-video-intel: `eDP1`, `VGA1`, `DP1…3`, `HDMI3`.
+  - Each new entry covers workspaces 0–5, the same as `monitorDP-1`.
 
 ### Files Modified
 - `etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml`
