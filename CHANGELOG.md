@@ -6,11 +6,17 @@
 - The skel dconf setting `org.gnome.desktop.interface gtk-theme` is now `Arc-Dawn-Dark` instead of `Arc-Dark`, so it
   matches the GTK theme XFCE actually applies. With `GTK_THEME` gone from the ISO's `/etc/environment`, ATT and other
   tools that read the theme through gsettings now see the real theme.
+- The GNOME window-manager theme key (`org.gnome.desktop.wm.preferences theme`) follows suit: `Arc-Dark` →
+  `Arc-Dawn-Dark`. xfwm4 doesn't read it; this is for consistency.
+- Three wallpaper keys that pointed to a file in the developer's own home folder are removed
+  (`org.gnome.desktop.background picture-uri` / `picture-uri-dark`, `org.gnome.desktop.screensaver picture-uri`).
+  On a user's system they pointed to a file that doesn't exist; XFCE sets its wallpaper through xfconf, not these keys.
 
 ### Technical Details
 - `etc/skel/.config/dconf/user` is a binary GVDB file. It was edited on a copy with `dconf write` inside a private
   `dbus-run-session` (`XDG_CONFIG_HOME` pointed at the copy), so the dconf service wrote the copy and not the live
-  user database. `dconf dump` before/after differs only in this one key.
+  user database. `dconf dump` before/after differs only in these keys. The wallpaper keys were removed with
+  `dconf reset`, so they fall back to the schema defaults; `strings` on the new file finds no trace of the old path.
 
 ### Files Modified
 - etc/skel/.config/dconf/user
