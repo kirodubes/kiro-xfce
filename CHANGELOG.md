@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026.10.08
+
+### What Changed
+- The skel dconf setting `org.gnome.desktop.interface gtk-theme` is now `Arc-Dawn-Dark` instead of `Arc-Dark`, so it
+  matches the GTK theme XFCE actually applies. With `GTK_THEME` gone from the ISO's `/etc/environment`, ATT and other
+  tools that read the theme through gsettings now see the real theme.
+
+### Technical Details
+- `etc/skel/.config/dconf/user` is a binary GVDB file. It was edited on a copy with `dconf write` inside a private
+  `dbus-run-session` (`XDG_CONFIG_HOME` pointed at the copy), so the dconf service wrote the copy and not the live
+  user database. `dconf dump` before/after differs only in this one key.
+
+### Files Modified
+- etc/skel/.config/dconf/user
+
 ## 2026.10.04
 
 ### What Changed
