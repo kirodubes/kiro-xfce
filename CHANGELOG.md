@@ -3,9 +3,11 @@
 ## 2026.10.08
 
 ### What Changed
+- **Note:** `etc/skel/.config/dconf/user` is not packaged — the PKGBUILD copies only `Thunar/`, `xfce4/`,
+  `autostart/` and `usr/` — so the dconf edits below live in this repo only and reach no ISO. On a live ISO,
+  xfsettingsd already syncs `gtk-theme` to `Arc-Dawn-Dark`; `color-scheme` stays `default`.
 - The skel dconf setting `org.gnome.desktop.interface gtk-theme` is now `Arc-Dawn-Dark` instead of `Arc-Dark`, so it
-  matches the GTK theme XFCE actually applies. With `GTK_THEME` gone from the ISO's `/etc/environment`, ATT and other
-  tools that read the theme through gsettings now see the real theme.
+  matches the GTK theme XFCE actually applies.
 - The GNOME window-manager theme key (`org.gnome.desktop.wm.preferences theme`) follows suit: `Arc-Dark` →
   `Arc-Dawn-Dark`. xfwm4 doesn't read it; this is for consistency.
 - Three wallpaper keys that pointed to a file in the developer's own home folder are removed
