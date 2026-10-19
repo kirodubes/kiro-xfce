@@ -1,7 +1,7 @@
 ###############################################################################
 #  KEYBINDINGS — XFCE
 #  Source: etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-#  Generated: 2026.06.30
+#  Generated: 2026.10.19
 #  Reference for the default bindings. Changed yours? Edit this file to match.
 ###############################################################################
 
@@ -62,6 +62,12 @@
   alt + Up                  variety --toggle-pause
   alt + Down                variety --resume
   ctrl + super + space      variety --selector
+  super + ctrl + a          pavucontrol
+  super + ctrl + shift + a  alacritty -e claude (AI agent)
+  super + shift + f         thunar (file manager)
+  super + shift + b         vivaldi-stable (browser)
+  super + shift + n         code (editor)
+  super + shift + m         spotify
 
 ── 2. Window Management ───────────────────────────────────────────────────────
   super + q                 close window
@@ -110,6 +116,9 @@
   XF86Display               xfce4-display-settings (display)
   XF86MonBrightnessUp       xbacklight -inc 10 (brightness up)
   XF86MonBrightnessDown     xbacklight -dec 10 (brightness down)
+  XF86AudioMicMute          toggle microphone mute
+  alt + XF86AudioRaiseVolume  raise volume by 1%
+  alt + XF86AudioLowerVolume  lower volume by 1%
 
 ── 7. Screenshots ────────────────────────────────────────────────────────────
   Print                     xfce4-screenshooter -f (fullscreen)
@@ -132,3 +141,5 @@
   ctrl + alt + comma        mintstick -m iso (USB image writer)
   ctrl + Escape             xfdesktop --menu (desktop menu)
   ctrl + super + s          kiro-keybindings (this cheatsheet)
+  super + ctrl + l          archlinux-betterlockscreen (lock screen)
+  super + k                 kiro-keybindings (this cheatsheet)
