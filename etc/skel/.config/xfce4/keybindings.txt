@@ -50,6 +50,7 @@
   ctrl + alt + z            fastfetch-tweak-tool
   ctrl + alt + w            fastfetch-tweak-tool
   ctrl + alt + e            archlinux-tweak-tool
+  ctrl + alt + h            ohmychadwm-tweak-tool
   ctrl + alt + i            kiro-iso-builder
   ctrl + alt + p            pamac-manager (package manager)
   alt + r                   rofi-theme-selector

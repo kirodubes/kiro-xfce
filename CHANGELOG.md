@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026.10.25
+
+### What Changed
+- Ctrl+Alt+H opens the Ohmychadwm Tweak Tool here too (the successor of Ohmychadwm Appearance; on ohmychadwm it is
+  Ctrl+Alt+H and Ctrl+Alt+X). Its Look page sets the theme, icons, cursor and font for XFCE as well, because they
+  share the same GTK and xsettings. The keybindings cheatsheet lists it.
+
+### Technical Details
+- Plain command, like the other tweak-tool keys here: on an XFCE-only install without the tool the key does nothing.
+  Ctrl+Alt+H was free in the Kiro shortcuts, XFCE's own defaults and a live config.
+
+### Files Modified
+- `etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml`
+- `etc/skel/.config/xfce4/keybindings.txt`
+
 ## 2026.10.19
 
 ### What Changed
