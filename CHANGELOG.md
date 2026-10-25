@@ -4,7 +4,7 @@
 
 ### What Changed
 - Ctrl+Alt+H opens the Ohmychadwm Tweak Tool here too (the successor of Ohmychadwm Appearance; on ohmychadwm it is
-  Ctrl+Alt+H and Ctrl+Alt+X). Its Look page sets the theme, icons, cursor and font for XFCE as well, because they
+  the same key). Its Look page sets the theme, icons, cursor and font for XFCE as well, because they
   share the same GTK and xsettings. The keybindings cheatsheet lists it.
 
 ### Technical Details
