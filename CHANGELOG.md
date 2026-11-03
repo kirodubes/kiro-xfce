@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026.11.03
+
+### What Changed
+- xfce4-power-manager no longer resets the power profile to "balanced" at every login. On AC it now asks
+  for "performance", so the tuned pin that kiro_final sets (`ppd_base_profile = performance`,
+  `throughput-performance`) holds. This covers XFCE and ohmychadwm, which also starts xfce4-power-manager.
+
+### Technical Details
+- xfce4-power-manager 4.20 sets the system profile through the power-profiles D-Bus API (served by tuned-ppd)
+  from `profile-on-ac` / `profile-on-battery`. With `profile-on-ac` unset it requested "balanced", and tuned-ppd
+  wrote that back to `/etc/tuned/ppd_base_profile`, so kiro-audit failed both tuned checks after a reboot.
+- `profile-on-battery` is left at the default so laptops still save power on battery.
+- Skel only: existing users get it from kiro-skell or a manual `xfconf-query`.
+
+### Files Modified
+- `etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml`
+
 ## 2026.10.25
 
 ### What Changed
