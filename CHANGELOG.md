@@ -5,14 +5,19 @@
 ### What Changed
 - New Thunar right-click action "Set as wallpaper Variety" for images. When Variety is running it sets the picture
   through Variety, so Variety stays in sync: Alt+F (`variety -f`) favourites this picture and next/previous continue
-  from it. This is the same approach as Kiro Atelier. When Variety is not running, a notification says so.
+  from it. This is the same approach as Kiro Atelier. When Variety is not running, a notification says so and
+  offers a "Start Variety" button: clicking it starts Variety with the clicked picture as wallpaper.
+- Tested in the Kiro VM (XFCE): set with Variety running (history + Alt+F favourite), button start, dismiss.
 - The existing "Set as wallpaper DS" (one image spanned across all monitors, `feh --no-xinerama`) and "SS"
   (the image on each monitor, `feh`) actions are unchanged.
 
 ### Technical Details
 - Detection uses the same anchored pattern as Kiro Atelier (`^(\S*python[0-9.]* )?\S*/variety( |$)`), because
   Variety runs as `python3 /usr/bin/variety`. The `^` anchor also keeps it from matching the action's own `sh -c`.
-- If Variety is not running, the action does not call `variety --set`: that would start Variety with its own rotation.
+- `notify-send --action=start="Start Variety" --wait -t 10000` prints `start` when the button is clicked; only then
+  `setsid -f variety --set "$1"` runs. A cold `variety --set` first re-applies Variety's last wallpaper, then the
+  clicked picture about 3 s later, so the desktop flickers once. Dismissed or expired: nothing starts.
+- 10 s instead of xfce4-notifyd's 5 s default, so there is time to reach the button.
 
 ### Files Modified
 - `etc/skel/.config/Thunar/uca.xml`

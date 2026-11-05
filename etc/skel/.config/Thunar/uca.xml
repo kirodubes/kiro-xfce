@@ -239,7 +239,7 @@
 	<name>Set as wallpaper Variety</name>
 	<submenu></submenu>
 	<unique-id>1762300000000000-1</unique-id>
-	<command>sh -c 'if pgrep -u &quot;$(id -u)&quot; -f &quot;^(\S*python[0-9.]* )?\S*/variety( |$)&quot; &gt;/dev/null; then variety --set &quot;$1&quot;; else notify-send &quot;Variety is not running&quot; &quot;Start Variety first, or use Set as wallpaper DS/SS&quot;; fi' _ %f</command>
+	<command>sh -c 'if pgrep -u &quot;$(id -u)&quot; -f &quot;^(\S*python[0-9.]* )?\S*/variety( |$)&quot; &gt;/dev/null; then variety --set &quot;$1&quot;; elif [ &quot;$(notify-send -a Variety -i variety -t 10000 --action=start=&quot;Start Variety&quot; --wait &quot;Variety is not running&quot; &quot;Start Variety to set this picture as wallpaper&quot;)&quot; = start ]; then setsid -f variety --set &quot;$1&quot; &gt;/dev/null 2&gt;&amp;1; fi' _ %f</command>
 	<description>Set as wallpaper through Variety so it stays in sync (Alt+F favourites this picture)</description>
 	<range></range>
 	<patterns>*</patterns>
