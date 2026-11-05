@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026.11.05
+
+### What Changed
+- New Thunar right-click action "Set as wallpaper Variety" for images. When Variety is running it sets the picture
+  through Variety, so Variety stays in sync: Alt+F (`variety -f`) favourites this picture and next/previous continue
+  from it. This is the same approach as Kiro Atelier. When Variety is not running, a notification says so.
+- The existing "Set as wallpaper DS" (one image spanned across all monitors, `feh --no-xinerama`) and "SS"
+  (the image on each monitor, `feh`) actions are unchanged.
+
+### Technical Details
+- Detection uses the same anchored pattern as Kiro Atelier (`^(\S*python[0-9.]* )?\S*/variety( |$)`), because
+  Variety runs as `python3 /usr/bin/variety`. The `^` anchor also keeps it from matching the action's own `sh -c`.
+- If Variety is not running, the action does not call `variety --set`: that would start Variety with its own rotation.
+
+### Files Modified
+- `etc/skel/.config/Thunar/uca.xml`
+
 ## 2026.11.03
 
 ### What Changed
