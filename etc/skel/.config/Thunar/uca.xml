@@ -213,11 +213,11 @@
 	<text-files/>
 </action>
 <action>
-	<icon>com.deepin.ScreenShot</icon>
+	<icon>kscreenshot</icon>
 	<name>Set as wallpaper DS</name>
 	<submenu></submenu>
 	<unique-id>1637670737487118-1</unique-id>
-	<command>feh --bg-fill --no-xinerama %f</command>
+	<command>sh -c 'if pgrep -u &quot;$(id -u)&quot; -f &quot;^(\S*python[0-9.]* )?\S*/variety( |$)&quot; &gt;/dev/null; then variety --set &quot;$1&quot;; sleep 3; fi; feh --bg-fill --no-xinerama &quot;$1&quot;' _ %f</command>
 	<description>Set as wallpaper using feh dual screen</description>
 	<range></range>
 	<patterns>*</patterns>
@@ -228,7 +228,7 @@
 	<name>Set as wallpaper SS</name>
 	<submenu></submenu>
 	<unique-id>1637670897220972-2</unique-id>
-	<command>feh --bg-fill %f</command>
+	<command>sh -c 'if pgrep -u &quot;$(id -u)&quot; -f &quot;^(\S*python[0-9.]* )?\S*/variety( |$)&quot; &gt;/dev/null; then variety --set &quot;$1&quot;; else feh --bg-fill &quot;$1&quot;; fi' _ %f</command>
 	<description>Set as wallpaper using feh single screen</description>
 	<range></range>
 	<patterns>*</patterns>

@@ -7,9 +7,13 @@
   through Variety, so Variety stays in sync: Alt+F (`variety -f`) favourites this picture and next/previous continue
   from it. This is the same approach as Kiro Atelier. When Variety is not running, a notification says so and
   offers a "Start Variety" button: clicking it starts Variety with the clicked picture as wallpaper.
-- Tested in the Kiro VM (XFCE): set with Variety running (history + Alt+F favourite), button start, dismiss.
-- The existing "Set as wallpaper DS" (one image spanned across all monitors, `feh --no-xinerama`) and "SS"
-  (the image on each monitor, `feh`) actions are unchanged.
+- "Set as wallpaper SS" (the image on each monitor) and "DS" (one image spanned across all monitors) now go
+  through Variety when it runs, so previous/next and Alt+F know the picture. Before, they called feh behind
+  Variety's back. Without Variety they stay plain feh, and Variety takes that wallpaper over on its next start.
+- DS showed a "?" icon: `com.deepin.ScreenShot` does not exist in Surfn (only `com.deepin.Screenshot`).
+  DS now uses the same `kscreenshot` icon as SS.
+- Tested in the Kiro VM, XFCE and ohmychadwm: set with Variety running (history + Alt+F favourite), button start,
+  dismiss, SS/DS with and without Variety, previous/next, file names with spaces and accents.
 
 ### Technical Details
 - Detection uses the same anchored pattern as Kiro Atelier (`^(\S*python[0-9.]* )?\S*/variety( |$)`), because
@@ -18,6 +22,9 @@
   `setsid -f variety --set "$1"` runs. A cold `variety --set` first re-applies Variety's last wallpaper, then the
   clicked picture about 3 s later, so the desktop flickers once. Dismissed or expired: nothing starts.
 - 10 s instead of xfce4-notifyd's 5 s default, so there is time to reach the button.
+- SS with Variety: `variety --set` only, because Variety's `set_wallpaper_kiro` already runs `feh --bg-fill` in
+  tiling WMs. DS with Variety: `variety --set`, `sleep 3`, then `feh --bg-fill --no-xinerama` on top to span it;
+  Variety's own next/previous go back to per-monitor fill.
 
 ### Files Modified
 - `etc/skel/.config/Thunar/uca.xml`
