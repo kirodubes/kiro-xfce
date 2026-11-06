@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026.11.06
+
+### What Changed
+- **New XFCE users get Surfn Kiro as icon theme.**
+
+### Technical Details
+- `xsettings.xml` `IconThemeName` → Surfn-Kiro (skel).
+
+### Files Modified
+- `etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml`
+- `CHANGELOG.md`
+
 ## 2026.11.05
 
 ### What Changed
