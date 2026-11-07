@@ -9,6 +9,9 @@ Educational / tutorial repository for [Xfce 4](https://www.xfce.org/), the light
 ## What's in this repo
 
 - `etc/skel/` — Xfce user config (xfconf settings, panel layout, autostart entries) that lands in `/etc/skel/`.
+- `usr/share/kiro-xfce/kiro-atelier/` — an offline page that shows what Kiro Atelier can do. Thunar's right-click
+  action "Paint with Kiro Atelier" on pictures runs Kiro Atelier when it is installed and opens this page when it
+  is not. Rebuild it with `tools/make-atelier-page.py` after the style gallery is repainted.
 - `super + ctrl + s` — opens the searchable keybindings cheatsheet (`kiro-keybindings`), the universal cheatsheet hotkey across all Kiro desktops.
 - `setup.sh`, `up.sh`, `cleanup.sh` — standard EDU bash scaffold.
 

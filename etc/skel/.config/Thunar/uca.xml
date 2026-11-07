@@ -213,6 +213,17 @@
 	<text-files/>
 </action>
 <action>
+	<icon>applications-graphics</icon>
+	<name>Paint with Kiro Atelier</name>
+	<submenu></submenu>
+	<unique-id>1762500000000000-1</unique-id>
+	<command>sh -c 'if command -v kiro-atelier &gt;/dev/null; then setsid -f kiro-atelier &quot;$@&quot; &gt;/dev/null 2&gt;&amp;1; else xdg-open /usr/share/kiro-xfce/kiro-atelier/index.html; fi' _ %F</command>
+	<description>Turn the selected pictures into paintings with Kiro Atelier (shows what it can do when it is not installed)</description>
+	<range></range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
 	<icon>kscreenshot</icon>
 	<name>Set as wallpaper DS</name>
 	<submenu></submenu>

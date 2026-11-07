@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiro Atelier</title>
+<style>
+:root { --bg: #f6f5f2; --card: #ffffff; --text: #1d1d1f; --dim: #6b6b70; --line: #e2e0db; --accent: #b4562b;
+  --on-accent: #ffffff; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #16171a; --card: #1f2024; --text: #ececec; --dim: #9a9aa2;
+    --line: #2e2f35; --accent: #e8875a; --on-accent: #16171a; }
+}
+:root[data-theme="dark"] { --bg: #16171a; --card: #1f2024; --text: #ececec; --dim: #9a9aa2; --line: #2e2f35;
+  --accent: #e8875a; --on-accent: #16171a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Cantarell, sans-serif; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+header { padding: 48px 0 20px; }
+h1 { margin: 0 0 6px; font-size: 38px; letter-spacing: -0.02em; }
+.lead { margin: 0; font-size: 19px; color: var(--dim); max-width: 760px; }
+.hero { width: 100%; display: block; border-radius: 12px; margin: 24px 0 8px; background: var(--line);
+  cursor: zoom-in; }
+.button { display: inline-block; background: var(--accent); color: var(--on-accent); text-decoration: none;
+  font-weight: 600; padding: 12px 22px; border-radius: 10px; }
+.button:hover { filter: brightness(1.08); }
+h2 { font-size: 26px; margin: 48px 0 12px; letter-spacing: -0.01em; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+.card h3 { margin: 0 0 6px; font-size: 17px; color: var(--accent); }
+.card p, .card ul { margin: 0; }
+.card ul { padding-left: 20px; }
+code { background: var(--line); padding: 2px 6px; border-radius: 5px; font-size: 14px; }
+.row { display: grid; grid-template-columns: 240px 1fr; gap: 20px; padding: 18px 20px; margin: 12px 0;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+.row h3 { margin: 0 0 4px; font-size: 18px; color: var(--accent); }
+.row p { margin: 0 0 6px; }
+.meta { color: var(--dim); font-size: 13px; }
+.cells { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; align-content: start; }
+figure { margin: 0; }
+figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; cursor: zoom-in;
+  display: block; background: var(--line); }
+figcaption { font-size: 12px; color: var(--dim); margin-top: 4px; }
+.get { text-align: center; padding: 32px 20px; }
+.get p { max-width: 640px; margin: 0 auto 18px; }
+footer { color: var(--dim); font-size: 13px; padding: 32px 0 48px; }
+#box { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.92); display: none; place-items: center;
+  z-index: 10; cursor: zoom-out; }
+#box.open { display: grid; }
+#box img { max-width: 96vw; max-height: 88vh; border-radius: 4px; }
+#box p { color: #ddd; margin: 10px 0 0; text-align: center; }
+@media (max-width: 800px) {
+  h1 { font-size: 30px; }
+  .row { grid-template-columns: 1fr; }
+  .cells { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Kiro Atelier</h1>
+  <p class="lead">Turn your photos and wallpapers into paintings, on your own computer. Impasto, watercolour,
+    gouache, pastel, Japanese woodblock, linocut, charcoal and more, in 4K. No cloud, no account, no cost per
+    picture: everything stays on your computer.</p>
+  <img class="hero" src="img/hero.jpg" alt="One photo of a mountain lake, painted in five Kiro Atelier styles">
+  <p><a class="button" href="https://ko-fi.com/s/6ff5175237">Get Kiro Atelier on Ko-fi</a></p>
+</header>
+
+<h2>What it does</h2>
+<div class="cards">
+  <div class="card"><h3>Right-click, paint</h3><p>Once Kiro Atelier is installed, right-click pictures in
+    Thunar and choose <b>Paint with Kiro Atelier</b>. Or drop a picture or a whole folder on it: it paints them
+    one after another.</p></div>
+  <div class="card"><h3>13 ready-made styles</h3><p>Every one is shown below on the same photos. Make your own
+    profiles on top, or paint one picture at several strengths and keep the one you like.</p></div>
+  <div class="card"><h3>Named and ready</h3><p>Each painting gets a name that says what is in it, and becomes
+    your wallpaper with one click.</p></div>
+  <div class="card"><h3>One painter for the house</h3><p>A computer without a suitable graphics card can send
+    its pictures to another computer in your home that has one, and get the paintings back.</p></div>
+</div>
+
+<h2>What your computer needs</h2>
+<div class="cards">
+  <div class="card"><h3>Graphics card</h3><ul>
+    <li>NVIDIA RTX 20xx or newer (RTX 20, 30, 40, 50 series)</li>
+    <li>at least 6 GB of video memory</li>
+    <li>GTX 16xx cards work, but are untested and much slower</li>
+    <li>AMD and Intel graphics are not supported</li>
+  </ul></div>
+  <div class="card"><h3>The rest</h3><ul>
+    <li>16 GB of memory (12 GB runs, with swapping)</li>
+    <li>about 20 GB free disk space (ComfyUI and the painting models)</li>
+    <li>an Arch-based Linux system: Kiro, KiroTux or Arch</li>
+  </ul></div>
+  <div class="card"><h3>Check first, for free</h3><p>KA Check tells you in a minute whether this computer can
+    paint, and what to do when it can't. It changes nothing:</p>
+    <p style="margin-top:8px"><code>sudo pacman -S kiro-atelier-check</code></p></div>
+</div>
+
+<h2>The styles</h2>
+<p class="meta">Every ready-made profile on the same three photos. Click a picture to see it bigger; the arrow
+  keys move on.</p>
+<section class="row"><div class="info"><h3>The photos</h3><p>Every profile below starts from these three photos.</p></div><div class="cells"><figure><img loading="lazy" src="img/original-mountain-lake.jpg" alt="Mountain lake, the photo"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/original-city.jpg" alt="City, the photo"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/original-sea.jpg" alt="Sea, the photo"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Default</h3><p class="meta">strength 0.65 · impasto · 3840 × 2160</p><p>The original Kiro Atelier look: thick impasto, a good balance between photo and paint.</p></div><div class="cells"><figure><img loading="lazy" src="img/default-mountain-lake.jpg" alt="Default, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/default-city.jpg" alt="Default, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/default-sea.jpg" alt="Default, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Palette Knife</h3><p class="meta">strength 0.75 · impasto · 3840 × 2160 · detail pass</p><p>Loose, heavy impasto with real knife ridges; the photo shows through less. Twice as slow.</p></div><div class="cells"><figure><img loading="lazy" src="img/palette-knife-mountain-lake.jpg" alt="Palette Knife, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/palette-knife-city.jpg" alt="Palette Knife, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/palette-knife-sea.jpg" alt="Palette Knife, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Gentle Touch</h3><p class="meta">strength 0.45 · impasto · 3840 × 2160</p><p>Stays close to the photo: same shapes and light, with a soft layer of paint over it.</p></div><div class="cells"><figure><img loading="lazy" src="img/gentle-touch-mountain-lake.jpg" alt="Gentle Touch, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/gentle-touch-city.jpg" alt="Gentle Touch, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/gentle-touch-sea.jpg" alt="Gentle Touch, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Gallery Print</h3><p class="meta">strength 0.55 · impasto · 3840 × 2160 · detail pass · PNG</p><p>Best quality for printing or a big screen: extra detail pass, saved as PNG. Slow, large files.</p></div><div class="cells"><figure><img loading="lazy" src="img/gallery-print-mountain-lake.jpg" alt="Gallery Print, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/gallery-print-city.jpg" alt="Gallery Print, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/gallery-print-sea.jpg" alt="Gallery Print, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Morning Wash</h3><p class="meta">strength 0.60 · watercolour · 3840 × 2160</p><p>Soft watercolour: light washes, gentle edges, paper texture.</p></div><div class="cells"><figure><img loading="lazy" src="img/morning-wash-mountain-lake.jpg" alt="Morning Wash, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/morning-wash-city.jpg" alt="Morning Wash, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/morning-wash-sea.jpg" alt="Morning Wash, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Monsoon</h3><p class="meta">strength 0.75 · watercolour · 3840 × 2160</p><p>Wild watercolour: colours run and bleed into each other, far from the photo.</p></div><div class="cells"><figure><img loading="lazy" src="img/monsoon-mountain-lake.jpg" alt="Monsoon, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/monsoon-city.jpg" alt="Monsoon, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/monsoon-sea.jpg" alt="Monsoon, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Poster Studio</h3><p class="meta">strength 0.70 · gouache · 3840 × 2160</p><p>Gouache: flat, bold colour shapes like a travel poster.</p></div><div class="cells"><figure><img loading="lazy" src="img/poster-studio-mountain-lake.jpg" alt="Poster Studio, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/poster-studio-city.jpg" alt="Poster Studio, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/poster-studio-sea.jpg" alt="Poster Studio, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Pastel Light</h3><p class="meta">strength 0.60 · pastel · 3840 × 2160</p><p>Soft pastel: chalky strokes and blended light on toned paper.</p></div><div class="cells"><figure><img loading="lazy" src="img/pastel-light-mountain-lake.jpg" alt="Pastel Light, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/pastel-light-city.jpg" alt="Pastel Light, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/pastel-light-sea.jpg" alt="Pastel Light, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Floating World</h3><p class="meta">strength 0.55 · ukiyo-e · 3840 × 2160</p><p>Japanese woodblock print: clean outlines, flat colours, patterned waves and clouds. People and action scenes stay recognisable.</p></div><div class="cells"><figure><img loading="lazy" src="img/floating-world-mountain-lake.jpg" alt="Floating World, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/floating-world-city.jpg" alt="Floating World, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/floating-world-sea.jpg" alt="Floating World, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Edo Landscape</h3><p class="meta">strength 0.65 · ukiyo-e · 3840 × 2160</p><p>Strongest woodblock look, for landscapes. People and action scenes get replaced.</p></div><div class="cells"><figure><img loading="lazy" src="img/edo-landscape-mountain-lake.jpg" alt="Edo Landscape, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/edo-landscape-city.jpg" alt="Edo Landscape, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/edo-landscape-sea.jpg" alt="Edo Landscape, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Linocut</h3><p class="meta">strength 0.70 · woodcut · 3840 × 2160</p><p>Woodcut print: bold carved black lines and a few flat colours. Best on landscapes.</p></div><div class="cells"><figure><img loading="lazy" src="img/linocut-mountain-lake.jpg" alt="Linocut, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/linocut-city.jpg" alt="Linocut, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/linocut-sea.jpg" alt="Linocut, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Charcoal Sketch</h3><p class="meta">strength 0.65 · charcoal · 3840 × 2160</p><p>Charcoal drawing: smudged black and grey strokes on rough paper, strong contrast.</p></div><div class="cells"><figure><img loading="lazy" src="img/charcoal-sketch-mountain-lake.jpg" alt="Charcoal Sketch, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/charcoal-sketch-city.jpg" alt="Charcoal Sketch, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/charcoal-sketch-sea.jpg" alt="Charcoal Sketch, Sea"><figcaption>Sea</figcaption></figure></div></section>
+<section class="row"><div class="info"><h3>Light Files</h3><p class="meta">strength 0.60 · impasto · 1920 × 1080</p><p>Impasto at 1920 × 1080: small files for a laptop or a second screen. Paints as fast as 4K.</p></div><div class="cells"><figure><img loading="lazy" src="img/light-files-mountain-lake.jpg" alt="Light Files, Mountain lake"><figcaption>Mountain lake</figcaption></figure><figure><img loading="lazy" src="img/light-files-city.jpg" alt="Light Files, City"><figcaption>City</figcaption></figure><figure><img loading="lazy" src="img/light-files-sea.jpg" alt="Light Files, Sea"><figcaption>Sea</figcaption></figure></div></section>
+
+<div class="card get">
+  <h2 style="margin-top:0">Get Kiro Atelier</h2>
+  <p>Donate once on Ko-fi and Kiro Atelier stays yours, with every update and new styles included at no extra
+    charge. You get a download link with the package.</p>
+  <a class="button" href="https://ko-fi.com/s/6ff5175237">Kiro Atelier on Ko-fi</a>
+</div>
+
+<footer>
+  Photos used for the paintings: Stanton Mountain reflected in Lake McDonald (GlacierNPS, public domain),
+  Strada Tâmplarilor, Sighișoara (DimiTalen, CC0), Big ocean wave splash (Riaan Myburgh, CC0), all from Wikimedia
+  Commons. Every painting on this page was made by Kiro Atelier.
+</footer>
+</div>
+<div id="box"><div><img alt=""><p></p></div></div>
+<script>
+const imgs = [...document.querySelectorAll(".hero, figure img")];
+const box = document.getElementById("box"), big = box.querySelector("img"), cap = box.querySelector("p");
+let at = -1;
+function show(i) {
+  at = (i + imgs.length) % imgs.length;
+  big.src = imgs[at].src; cap.textContent = imgs[at].alt; box.classList.add("open");
+}
+imgs.forEach((img, i) => img.addEventListener("click", () => show(i)));
+box.addEventListener("click", () => box.classList.remove("open"));
+document.addEventListener("keydown", (e) => {
+  if (!box.classList.contains("open")) return;
+  if (e.key === "Escape") box.classList.remove("open");
+  if (e.key === "ArrowRight") show(at + 1);
+  if (e.key === "ArrowLeft") show(at - 1);
+});
+</script>
+</body>
+</html>

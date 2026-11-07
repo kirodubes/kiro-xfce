@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiro Atelier</title>
+<style>
+:root { --bg: #f6f5f2; --card: #ffffff; --text: #1d1d1f; --dim: #6b6b70; --line: #e2e0db; --accent: #b4562b;
+  --on-accent: #ffffff; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #16171a; --card: #1f2024; --text: #ececec; --dim: #9a9aa2;
+    --line: #2e2f35; --accent: #e8875a; --on-accent: #16171a; }
+}
+:root[data-theme="dark"] { --bg: #16171a; --card: #1f2024; --text: #ececec; --dim: #9a9aa2; --line: #2e2f35;
+  --accent: #e8875a; --on-accent: #16171a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Cantarell, sans-serif; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+header { padding: 48px 0 20px; }
+h1 { margin: 0 0 6px; font-size: 38px; letter-spacing: -0.02em; }
+.lead { margin: 0; font-size: 19px; color: var(--dim); max-width: 760px; }
+.hero { width: 100%; display: block; border-radius: 12px; margin: 24px 0 8px; background: var(--line);
+  cursor: zoom-in; }
+.button { display: inline-block; background: var(--accent); color: var(--on-accent); text-decoration: none;
+  font-weight: 600; padding: 12px 22px; border-radius: 10px; }
+.button:hover { filter: brightness(1.08); }
+h2 { font-size: 26px; margin: 48px 0 12px; letter-spacing: -0.01em; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+.card h3 { margin: 0 0 6px; font-size: 17px; color: var(--accent); }
+.card p, .card ul { margin: 0; }
+.card ul { padding-left: 20px; }
+code { background: var(--line); padding: 2px 6px; border-radius: 5px; font-size: 14px; }
+.row { display: grid; grid-template-columns: 240px 1fr; gap: 20px; padding: 18px 20px; margin: 12px 0;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+.row h3 { margin: 0 0 4px; font-size: 18px; color: var(--accent); }
+.row p { margin: 0 0 6px; }
+.meta { color: var(--dim); font-size: 13px; }
+.cells { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; align-content: start; }
+figure { margin: 0; }
+figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; cursor: zoom-in;
+  display: block; background: var(--line); }
+figcaption { font-size: 12px; color: var(--dim); margin-top: 4px; }
+.get { text-align: center; padding: 32px 20px; }
+.get p { max-width: 640px; margin: 0 auto 18px; }
+footer { color: var(--dim); font-size: 13px; padding: 32px 0 48px; }
+#box { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.92); display: none; place-items: center;
+  z-index: 10; cursor: zoom-out; }
+#box.open { display: grid; }
+#box img { max-width: 96vw; max-height: 88vh; border-radius: 4px; }
+#box p { color: #ddd; margin: 10px 0 0; text-align: center; }
+@media (max-width: 800px) {
+  h1 { font-size: 30px; }
+  .row { grid-template-columns: 1fr; }
+  .cells { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Kiro Atelier</h1>
+  <p class="lead">Turn your photos and wallpapers into paintings, on your own computer. Impasto, watercolour,
+    gouache, pastel, Japanese woodblock, linocut, charcoal and more, in 4K. No cloud, no account, no cost per
+    picture: everything stays on your computer.</p>
+  <img class="hero" src="img/hero.jpg" alt="One photo of a mountain lake, painted in five Kiro Atelier styles">
+  <p><a class="button" href="@@KOFI@@">Get Kiro Atelier on Ko-fi</a></p>
+</header>
+
+<h2>What it does</h2>
+<div class="cards">
+  <div class="card"><h3>Right-click, paint</h3><p>Once Kiro Atelier is installed, right-click pictures in
+    Thunar and choose <b>Paint with Kiro Atelier</b>. Or drop a picture or a whole folder on it: it paints them
+    one after another.</p></div>
+  <div class="card"><h3>13 ready-made styles</h3><p>Every one is shown below on the same photos. Make your own
+    profiles on top, or paint one picture at several strengths and keep the one you like.</p></div>
+  <div class="card"><h3>Named and ready</h3><p>Each painting gets a name that says what is in it, and becomes
+    your wallpaper with one click.</p></div>
+  <div class="card"><h3>One painter for the house</h3><p>A computer without a suitable graphics card can send
+    its pictures to another computer in your home that has one, and get the paintings back.</p></div>
+</div>
+
+<h2>What your computer needs</h2>
+<div class="cards">
+  <div class="card"><h3>Graphics card</h3><ul>
+    <li>NVIDIA RTX 20xx or newer (RTX 20, 30, 40, 50 series)</li>
+    <li>at least 6 GB of video memory</li>
+    <li>GTX 16xx cards work, but are untested and much slower</li>
+    <li>AMD and Intel graphics are not supported</li>
+  </ul></div>
+  <div class="card"><h3>The rest</h3><ul>
+    <li>16 GB of memory (12 GB runs, with swapping)</li>
+    <li>about 20 GB free disk space (ComfyUI and the painting models)</li>
+    <li>an Arch-based Linux system: Kiro, KiroTux or Arch</li>
+  </ul></div>
+  <div class="card"><h3>Check first, for free</h3><p>KA Check tells you in a minute whether this computer can
+    paint, and what to do when it can't. It changes nothing:</p>
+    <p style="margin-top:8px"><code>sudo pacman -S kiro-atelier-check</code></p></div>
+</div>
+
+<h2>The styles</h2>
+<p class="meta">Every ready-made profile on the same three photos. Click a picture to see it bigger; the arrow
+  keys move on.</p>
+@@STYLES@@
+
+<div class="card get">
+  <h2 style="margin-top:0">Get Kiro Atelier</h2>
+  <p>Donate once on Ko-fi and Kiro Atelier stays yours, with every update and new styles included at no extra
+    charge. You get a download link with the package.</p>
+  <a class="button" href="@@KOFI@@">Kiro Atelier on Ko-fi</a>
+</div>
+
+<footer>
+  Photos used for the paintings: Stanton Mountain reflected in Lake McDonald (GlacierNPS, public domain),
+  Strada Tâmplarilor, Sighișoara (DimiTalen, CC0), Big ocean wave splash (Riaan Myburgh, CC0), all from Wikimedia
+  Commons. Every painting on this page was made by Kiro Atelier.
+</footer>
+</div>
+<div id="box"><div><img alt=""><p></p></div></div>
+<script>
+const imgs = [...document.querySelectorAll(".hero, figure img")];
+const box = document.getElementById("box"), big = box.querySelector("img"), cap = box.querySelector("p");
+let at = -1;
+function show(i) {
+  at = (i + imgs.length) % imgs.length;
+  big.src = imgs[at].src; cap.textContent = imgs[at].alt; box.classList.add("open");
+}
+imgs.forEach((img, i) => img.addEventListener("click", () => show(i)));
+box.addEventListener("click", () => box.classList.remove("open"));
+document.addEventListener("keydown", (e) => {
+  if (!box.classList.contains("open")) return;
+  if (e.key === "Escape") box.classList.remove("open");
+  if (e.key === "ArrowRight") show(at + 1);
+  if (e.key === "ArrowLeft") show(at - 1);
+});
+</script>
+</body>
+</html>
