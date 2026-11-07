@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026.11.07
+
+### What Changed
+
+- Thunar's right-click "Create symlink" action now shows a coloured icon like the other custom actions. Before, it was the only action with a symbolic icon, which GTK always draws flat in the menu's text colour.
+
+### Technical Details
+
+- `uca.xml` icon `insert-link-symbolic` → `insert-link`. The other 25 actions already use regular icon names. neo-candy-icons got a new candy `insert-link` (chain + plus, blue `#5570FF → #4DD3FF`) the same day; Surfn already has a colourful one.
+- Existing users keep their own `~/.config/Thunar/uca.xml`; only new users (or a skel reset) get the change.
+
+### Files Modified
+
+- etc/skel/.config/Thunar/uca.xml
+
 ## 2026.11.06
 
 ### What Changed

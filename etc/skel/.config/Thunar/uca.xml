@@ -262,7 +262,7 @@
 	<video-files/>
 </action>
 <action>
-	<icon>insert-link-symbolic</icon>
+	<icon>insert-link</icon>
 	<name>Create symlink</name>
 	<submenu></submenu>
 	<unique-id>1526631663081446-14</unique-id>
